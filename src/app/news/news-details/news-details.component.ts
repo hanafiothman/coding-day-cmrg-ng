@@ -1,9 +1,8 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NewsService } from 'src/api/service/news.service';
 import { UserService } from 'src/api/service/user.service';
 import { News } from 'src/model/news';
-import { User } from 'src/model/user';
 
 @Component({
 	selector: 'app-news-details',
