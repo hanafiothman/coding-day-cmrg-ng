@@ -1,0 +1,11 @@
+<app-news-card
+    *ngIf="newsDetails"
+    [newsTitle]="newsDetails.title"
+    [newsTimestamp]="newsDetails.timestamp"
+    [newsMessage]="newsDetails.message"
+    [newsAuthor]="newsDetails.author"
+></app-news-card>
+
+<div class="py-2" *ngIf="newsDetails && newsDetails.author">
+    To contact the author, please send an email to <a [href]="'mailto:' + newsDetails.author.email">{{ newsDetails.author.email }}</a>
+</div>

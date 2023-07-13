@@ -14,6 +14,10 @@ export class NewsService {
         return this.http.get<News[]>('@api/news');
     }
 
+    fetchNewsDetails(newsId: string) {
+        return this.http.get<News>(`@api/news/${newsId}`);
+    }
+
     createNews() {
 
     }

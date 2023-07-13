@@ -9,4 +9,6 @@
     [newsTimestamp]="newsElem.timestamp"
     [newsMessage]="newsElem.message"
     [newsAuthor]="newsElem.author"
+    [clickable]="true"
+    (click)="navigateNewsDetails(newsElem.id)"
 ></app-news-card>

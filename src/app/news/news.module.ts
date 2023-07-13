@@ -4,10 +4,12 @@ import { NewsContainerComponent } from './news-container/news-container.componen
 import { NewsRoutingModule } from './news-routing.module';
 import { NewsCardModule } from './news-card/news-card.component';
 import { MatButtonModule } from '@angular/material/button';
+import { NewsDetailsComponent } from './news-details/news-details.component';
 
 @NgModule({
 	declarations: [
-		NewsContainerComponent
+		NewsContainerComponent,
+  NewsDetailsComponent
 	],
 	imports: [
 		CommonModule,

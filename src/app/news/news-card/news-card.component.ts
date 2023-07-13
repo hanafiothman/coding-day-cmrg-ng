@@ -18,7 +18,9 @@ export class NewsCardComponent implements OnChanges {
 	@Input()
     newsTimestamp!: string;
 	@Input()
-    newsAuthor!: User
+    newsAuthor!: User;
+	@Input()
+	clickable!: boolean;
 
 	ngOnChanges(changes: SimpleChanges): void {
         if ('newsTimestamp' in changes && changes['newsTimestamp'].currentValue) {
