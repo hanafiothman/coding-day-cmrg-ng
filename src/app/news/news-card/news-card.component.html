@@ -1,0 +1,19 @@
+<app-card>
+    <div class="flex align-start card-header">
+        <app-avatar
+            [source]="newsAuthor.avatar"
+            [class.author-img]="true"
+        />
+        <div class="w-full">
+            <div class="timestamp">
+                {{ newsTimestamp }}
+            </div>
+            <div class="title">
+                {{ newsTitle }}
+            </div>
+        </div>
+    </div>
+    <div class="message">
+        {{ newsMessage }}
+    </div>
+</app-card>

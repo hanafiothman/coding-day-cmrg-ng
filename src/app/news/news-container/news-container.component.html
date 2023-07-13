@@ -1,0 +1,12 @@
+<div class="flex justify-end pb-4">
+    <app-button>Create</app-button>
+</div>
+
+<app-news-card
+    *ngFor="let newsElem of news"
+    [class.news-card]="true"
+    [newsTitle]="newsElem.title"
+    [newsTimestamp]="newsElem.timestamp"
+    [newsMessage]="newsElem.message"
+    [newsAuthor]="newsElem.author"
+></app-news-card>

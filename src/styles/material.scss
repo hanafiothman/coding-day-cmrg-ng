@@ -46,3 +46,5 @@ $coding-day-cmrg-ng-theme: mat.define-light-theme((
 // @include mat.all-component-themes($coding-day-cmrg-ng-theme);
 @include mat.core-theme($coding-day-cmrg-ng-theme);
 @include mat.toolbar-theme($coding-day-cmrg-ng-theme);
+@include mat.card-theme($coding-day-cmrg-ng-theme);
+@include mat.button-theme($coding-day-cmrg-ng-theme);
