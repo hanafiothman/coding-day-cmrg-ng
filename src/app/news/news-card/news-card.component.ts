@@ -1,7 +1,6 @@
 import { CommonModule, formatDate } from '@angular/common';
 import { Component, Input, NgModule, OnChanges, SimpleChanges } from '@angular/core';
-import { AvatarModule } from 'src/app/shared/avatar/avatar.component';
-import { CardModule } from 'src/app/shared/card/card.component';
+import { MatCardModule } from '@angular/material/card';
 import { User } from 'src/model/user';
 
 @Component({
@@ -32,8 +31,7 @@ export class NewsCardComponent implements OnChanges {
 	declarations: [NewsCardComponent],
 	imports: [
 		CommonModule,
-		CardModule,
-		AvatarModule
+		MatCardModule
 	],
 	exports: [NewsCardComponent]
   })

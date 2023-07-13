@@ -50,3 +50,23 @@ $coding-day-cmrg-ng-theme: mat.define-light-theme((
 @include mat.button-theme($coding-day-cmrg-ng-theme);
 @include mat.form-field-theme($coding-day-cmrg-ng-theme);
 @include mat.input-theme($coding-day-cmrg-ng-theme);
+
+
+.mdc-button {
+    height: 34px;
+    font-size: 14px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #E5E5E5;
+}
+
+mat-card {
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: none !important;
+}

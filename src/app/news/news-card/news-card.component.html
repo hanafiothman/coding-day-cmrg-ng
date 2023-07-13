@@ -1,8 +1,9 @@
-<app-card>
+<mat-card>
     <div class="flex align-start card-header">
-        <app-avatar
-            [source]="newsAuthor.avatar"
-            [class.author-img]="true"
+        <img
+            class="avatar mr-2"
+            [src]="newsAuthor.avatar"
+            [alt]="newsAuthor.name.slice(0,1)"
         />
         <div class="w-full">
             <div class="timestamp">
@@ -16,4 +17,4 @@
     <div class="message">
         {{ newsMessage }}
     </div>
-</app-card>
+</mat-card>

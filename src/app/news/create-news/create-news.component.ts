@@ -1,10 +1,10 @@
 import { CommonModule, Location } from '@angular/common';
 import { Component, NgModule, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CardModule } from 'src/app/shared/card/card.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
 	selector: 'app-create-news',
@@ -40,11 +40,11 @@ export class CreateNewsComponent implements OnInit {
 	declarations: [CreateNewsComponent],
 	imports: [
 		CommonModule,
-		CardModule,
 		ReactiveFormsModule,
 		FormsModule,
 		MatFormFieldModule,
 		MatInputModule,
+		MatCardModule,
 		MatButtonModule
 	],
 	exports: [CreateNewsComponent]
