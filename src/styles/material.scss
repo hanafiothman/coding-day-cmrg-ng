@@ -48,3 +48,5 @@ $coding-day-cmrg-ng-theme: mat.define-light-theme((
 @include mat.toolbar-theme($coding-day-cmrg-ng-theme);
 @include mat.card-theme($coding-day-cmrg-ng-theme);
 @include mat.button-theme($coding-day-cmrg-ng-theme);
+@include mat.form-field-theme($coding-day-cmrg-ng-theme);
+@include mat.input-theme($coding-day-cmrg-ng-theme);

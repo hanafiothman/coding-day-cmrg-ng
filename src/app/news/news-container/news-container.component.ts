@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NewsService } from 'src/api/service/news.service';
 import { News } from 'src/model/news';
 
@@ -10,7 +11,7 @@ import { News } from 'src/model/news';
 export class NewsContainerComponent implements OnInit {
   news: News[] = [];
 
-  constructor(private newsService: NewsService) {
+  constructor(private newsService: NewsService, private router: Router) {
 
   }
 
@@ -18,11 +19,15 @@ export class NewsContainerComponent implements OnInit {
     this.fetchNews();
   }
 
-  private fetchNews() {
+  private fetchNews(): void {
     this.newsService.fetchNews().subscribe((news) => { 
       this.news = news.sort((n1, n2) => {
         return new Date(n2.timestamp).valueOf() - new Date(n1.timestamp).valueOf();
       });
     });
+  }
+
+  navigateCreateNews(): void {    
+    this.router.navigate(['/news/create']);
   }
 }
