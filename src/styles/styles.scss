@@ -16,3 +16,22 @@ div {
     box-sizing: border-box;
 }
 
+.mdc-button {
+    height: 34px !important;
+    font-size: 14px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #E5E5E5;
+}
+
+mat-card {
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 5px !important;
+    width: 100%;
+    padding: 10px;
+    box-shadow: none !important;
+}
+

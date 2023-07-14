@@ -36,5 +36,5 @@ export class NewsCardComponent implements OnChanges {
 		MatCardModule
 	],
 	exports: [NewsCardComponent]
-  })
-  export class NewsCardModule { }
+})
+export class NewsCardModule { }

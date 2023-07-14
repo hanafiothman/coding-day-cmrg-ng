@@ -10,8 +10,12 @@ export class UserService {
 
     }
 
-    fetchUsers() {
-        return this.http.get<User[]>('@api/users');
+    fetchUsers(page: number, limit: number) {
+        return this.http.get<User[]>(`@api/users?_page=${page}&_limit=${limit}`);
+    }
+
+    fetchActiveUsers(page: number, limit: number) {
+        return this.http.get<User[]>(`@api/users?isActive=true&_page=${page}&_limit=${limit}`);
     }
 
     fetchUser(userId: string) {

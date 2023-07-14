@@ -4,11 +4,12 @@
 
 <app-news-card
     *ngFor="let newsElem of news"
-    [class.news-card]="true"
     [newsTitle]="newsElem.title"
     [newsTimestamp]="newsElem.timestamp"
     [newsMessage]="newsElem.message"
     [newsAuthor]="newsElem.author"
     [clickable]="true"
     (click)="navigateNewsDetails(newsElem.id)"
+    [class.block]="true"
+    [class.mb-4]="true"
 ></app-news-card>

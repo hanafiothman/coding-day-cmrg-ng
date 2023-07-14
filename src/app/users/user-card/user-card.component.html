@@ -1,0 +1,17 @@
+<mat-card>
+    <div class="flex items-center">
+        <img
+            class="avatar mr-2"
+            [src]="userAvatar"
+            [alt]="userName.slice(0,1)"
+        />
+        <div class="w-full">
+            <div class="font-bold">
+                {{ userName }}
+            </div>
+            <div *ngIf="userTitle">
+                {{ userTitle }}
+            </div>
+        </div>
+    </div>
+</mat-card>

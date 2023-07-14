@@ -1,0 +1,8 @@
+<app-user-card
+    *ngFor="let user of users"
+    [userAvatar]="user.avatar"
+    [userName]="user.name"
+    [userTitle]="user.title"
+    [class.block]="true"
+    [class.mb-4]="true"
+></app-user-card>

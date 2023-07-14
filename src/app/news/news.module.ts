@@ -9,7 +9,7 @@ import { NewsDetailsComponent } from './news-details/news-details.component';
 @NgModule({
 	declarations: [
 		NewsContainerComponent,
-  NewsDetailsComponent
+  		NewsDetailsComponent
 	],
 	imports: [
 		CommonModule,
