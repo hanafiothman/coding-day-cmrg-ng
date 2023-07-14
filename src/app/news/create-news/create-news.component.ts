@@ -28,6 +28,7 @@ export class CreateNewsComponent implements OnInit {
 	}
 
 	submitNews(): void {
+		// TODO
 		console.log(this.createNewsForm.value);
 	}
 
