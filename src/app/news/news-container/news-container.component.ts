@@ -18,10 +18,8 @@ export class NewsContainerComponent implements OnInit {
 	}
 
 	private fetchNews(): void {
-		this.newsService.fetchNews().subscribe((news) => { 
-			this.news = news.sort((n1, n2) => {
-				return new Date(n2.timestamp).valueOf() - new Date(n1.timestamp).valueOf();
-			});
+		this.newsService.fetchNews().subscribe((news) => {
+			this.news = news;
 		});
 	}
 
